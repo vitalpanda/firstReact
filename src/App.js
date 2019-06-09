@@ -19,7 +19,7 @@ class App extends React.Component{
     const pName = e.target.elements.place.value;
     
     const gApi = await fetch(
-      `https://maps.googleapis.com/maps/api/geocode/json?address=${pName}&key=AIzaSyBbwiTiqvNsHwXsR5cIeyTm_L6DvUj3T28`
+      `https://maps.googleapis.com/maps/api/geocode/json?address=${pName}&key=`
     );
     const gApi_data = await gApi.json();
     //console.log(gApi_data);
